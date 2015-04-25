@@ -6,4 +6,4 @@ This application uses the 38 model of motocars data with reference to the mpg fu
 
 Changes made to any of the 5 selections will change the graph display accordingly.
 
-The ui.R and server.R are available at this github repository [https://github.com/stevyi/DDP]
+The ui.R and server.R are available at this github repository [https://github.com/stevyi/Develop-Data-Product]
