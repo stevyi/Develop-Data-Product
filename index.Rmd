@@ -1,0 +1,77 @@
+---
+title: "Interactive Graph Plotting using mtcars Dataset"
+author: "Stev Yip"
+highlighter: highlight.js
+output:
+  html_document:
+    number_sections: yes
+    toc: yes
+job: Developing Data Product (Shiny, Slidify)
+knit: slidify::knit2slides
+mode: selfcontained
+hitheme: tomorrow
+subtitle: Developing Data Product using Slidify
+framework: io2012
+widgets: bootstrap
+---
+
+## Course Project : Lession 7 - Regression Models
+
+### Regression Models Course Project  
+
+- URL: *http://rpubs.com/stevyip/76509*
+
+- The purpose of this presentation is to showcase the use of Shiny and Slidify for data analysis using R programming (e.g., R Studio tool). It is a simple and powerful tool to present data, analyse and predict possible outcomes, in a web-based interactive environment.
+
+- These application tools are capable to present how simple it is to do a quick exploratory analysis, using an interactive graph plotting (e.g.,boxplot) for users to study the relationship of different variables on mpg.
+
+### Reference to Coursera
+URL: *https://class.coursera.org/devdataprod-007*
+
+---
+
+## Source Data
+
+> The data was extracted from the 1974 Motor Trend US magazine, comprises fuel consumption with respect to 10 aspects of design and performance for 32 cars (1973–74 models) to study and explore the relationship between a set of variables and MPG.
+```{r}
+library(datasets)
+dim(mtcars)
+head(mtcars,5)
+```
+
+---
+
+## Description of "mtcars" dataset 
+
+** A data frame with 32 observations on 11 variables.**
+
+| Index | Field | Detail |
+------- | ----- | ------ |
+| [, 1] | mpg   | Miles/(US) gallon |
+| [, 2] | cyl   | Number of cylinders |
+| [, 3]	| disp  | Displacement (cu.in.) |
+| [, 4]	| hp    | Gross horsepower |
+| [, 5]	| drat  | Rear axle ratio |
+| [, 6]	| wt    | Weight (lb/1000) |
+| [, 7]	| qsec  | 1/4 mile time |
+| [, 8]	| vs    | V/S |
+| [, 9]	| am    | Transmission (0 = automatic, 1 = manual) |
+| [,10]	| gear  | Number of forward gears |
+| [,11]	| carb  | Number of carburetors |
+
+---
+
+## Conclusion
+
+- In the Regression Models project, we concluded that manual transmission automobiles provide higher values of MPG and there is a correlation between "mpg" with variables such as "cyl", "disp", "hp", "drat","wt", "qsec","vs", "am", "gear" and "carb". 
+
+- In summary, a series of modeling have been conducted with the following conclusions:
+
+  * Automobiles with manual transmissions have better MPG than automatic transmisions by 1.8 and it is affected by horsepower, number of cylinders and weight of the automobile.
+  * MPG decreases by only 0.32 for every increase of 10hp horsepower.
+  * MPG decreases by 3.0 or 2.2 if the number of cylinders increases from 4 to 6 or 8.
+  * MPG decreases with weight of the automobiles, e.g., about 2.5 for every 1000lb increase.
+  
+---
+
+
